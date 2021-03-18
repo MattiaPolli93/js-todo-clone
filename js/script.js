@@ -1,6 +1,6 @@
 $(function() {
     // Creating an array
-    var toDoList = [
+    var toBuyList = [
         "Buy Apples 🍏",
         "Buy Oranges 🍊",
         "Buy Kiwis 🥝",
@@ -9,12 +9,17 @@ $(function() {
         "Buy Lemons 🍋",
     ];
 
-    for (var i = 0; i < toDoList.length; i++) {
+    for (var i = 0; i < toBuyList.length; i++) {
         // Cloning the template div
         var template = $(".template li").clone();
         // Adding info to the template div
-        template.prepend(toDoList[i]);
+        template.prepend(toBuyList[i]);
         // Adding template div to the list
-        $(".to-do-list").append(template);
+        $(".to-buy-list").append(template);
     }
+
+    // Enabling deletion from the list by clicking on "X"
+    $(".delete").click(function() {
+        $(this).parent().remove();
+    });
 });

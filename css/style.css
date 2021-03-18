@@ -5,6 +5,52 @@
     box-sizing: border-box;
 }
 
+.wrapper {
+    height: 100vh;
+    background-image: linear-gradient(to right, #f32d2d , #f7f722);
+}
+
+.to-buy-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    list-style: none;
+}
+
+.to-buy-list li {
+    width: 15%;
+    margin: 10px 0;
+}
+
+.delete {
+    cursor: pointer;
+    color: #8f0505;
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+/* Input */
+.input-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 35px;
+}
+
+#add-item {
+    width: 300px;
+    margin-left: 30px;
+}
+
+#add-item::placeholder {
+    color: #8b2500;
+    font-size: 25px;
+    background-color: #fcbd4a;
+}
+
+/* Template */
 .template {
     display: none;
 }
