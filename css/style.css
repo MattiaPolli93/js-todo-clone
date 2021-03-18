@@ -10,6 +10,7 @@
     background-image: linear-gradient(to right, #f32d2d , #f7f722);
 }
 
+/* List */
 .to-buy-list {
     display: flex;
     flex-direction: column;

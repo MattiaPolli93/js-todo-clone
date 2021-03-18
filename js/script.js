@@ -18,6 +18,11 @@ $(function() {
         $(".to-buy-list").append(template);
     }
     
+    // Enabling deletion from the list by clicking on "X"
+    $(".to-buy-list").on("click", ".delete", function() {
+        $(this).parent().remove();
+    }); 
+
     // Adding elements to the list via input
     $("#add-item").keydown(function(event) {
         if (event.which == 13) {
@@ -32,12 +37,6 @@ $(function() {
                 $(".to-buy-list").append(template);
                 $(this).val("");
             }
-        }
-                
-        // Enabling deletion from the list by clicking on "X"
-        $(".delete").click(function() {
-            $(this).parent().remove();
-        });
-        
-    })
+        }               
+    });
 });
